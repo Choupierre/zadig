@@ -1,0 +1,79 @@
+.zadig_contact_title {
+    background-color: #fcfaf4;
+    margin: 0;
+
+    img {
+        height: auto;
+    }
+
+    .wp-block-column:first-child {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+    }
+
+    .wp-block-column:last-child {
+        display: flex;
+        flex-direction: column;
+        align-content: flex-end;
+    }
+
+    h1 {
+        @extend .zadig_title_left;
+        width: 466px;
+        margin-left: 122px;
+        height: 2em;
+        padding: 0;
+    }
+
+    .wp-block-image {
+        margin: 0;
+    }
+}
+
+.zadig_contact_description {
+    background-color: #fcfaf4;
+    margin: 0;
+    padding-top: 147px;
+    padding-bottom: 237px;
+
+    .wp-block-column:first-child > * {
+        padding-left: 122px;
+    }
+
+    .wp-block-column:last-child > * {
+        padding-left: 22px;
+        width: 466px;
+    }
+
+    .wp-block-column {
+        margin: 0;
+    }
+
+    h2 {
+        font-family: Cormorant Infant;
+        font-style: italic;
+        font-weight: 300;
+        font-size: 50px;
+    }
+
+    h3 {
+        font-family: Karla;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 19px;
+        letter-spacing: 0.2em;
+        text-transform: uppercase;
+        padding-top: 1.5em;
+    }
+
+    p {
+        padding-top: 1.5em;
+        padding-bottom: 3em;
+    }
+
+    .wp-block-button{
+        padding-top: 1.5em;
+    }
+
+}

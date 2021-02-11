@@ -1,0 +1,36 @@
+.post-22 {
+    background-color: #fcfaf4;
+
+    .zadig_patreon_title {
+        @extend .zadig_title_left;
+        width: 588px;
+        margin-left: 122px;
+    }
+
+    .zadig_patreon_description {
+        margin: 3em 0 7em;
+        width: 588px;
+        text-align: justify;
+    }
+
+    .wp-block-columns {
+        padding-left: 122px;
+        padding-bottom: 87px;
+        margin: 0;
+    }
+
+    .wp-block-column {
+        margin: 0;
+    }
+
+    .wp-block-column:not(:first-child) {
+        text-align: right;
+    }
+
+    .wp-block-image {
+        img {
+            max-width: 588px;
+            height: auto;
+        }
+    }
+}

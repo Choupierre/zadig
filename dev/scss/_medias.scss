@@ -1,0 +1,151 @@
+.zadig_medias_title {
+    background-color: #fcfaf4;
+
+    .wp-block-columns {
+        height: 253px;
+        overflow: hidden;
+        margin: 0;
+    }
+
+    img {
+        height: auto;
+    }
+
+    .wp-block-column:last-child {
+        display: flex;
+        flex-direction: column;
+        align-content: flex-end;
+    }
+
+    h1 {
+        display: block;
+        text-align: right;
+        margin: 128px 122px 0 100px;
+        font-family: Cormorant Infant;
+        font-weight: Bold;
+        @include fluid-type(14px, 65px);
+        height: 2em;
+        letter-spacing: 0.02em;
+        border-bottom: 2px solid black;
+    }
+}
+
+.zadig_discographie {
+    display: flex;
+    flex-direction: row;
+    background-color: #fcfaf4;
+    margin: 0;
+
+    &:nth-child(2n) {
+        flex-direction: row-reverse;
+      
+        img {
+            right: 0;
+        }
+    }   
+
+    figure {
+        position: relative;
+        height: 694px;
+    }
+
+    img {
+        position: absolute;
+        max-width: unset;
+    }
+
+    & :nth-child(n) {
+        flex: 1 0;
+    }
+
+   
+
+    > .wp-block-column {
+        display: grid;
+        grid-template-columns: 100%;
+        align-content: center;
+        margin: 0;    
+        padding: 0 100px 0 128px;   
+    }
+
+    h3 {
+        font-family: Cormorant Infant;
+        font-style: italic;
+        font-weight: 300;
+        font-size: 50px;
+        line-height: 126.9%;
+    }
+
+    h4 {
+        font-family: Karla;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 19px;
+        line-height: 95.4%;
+        /* or 18px */
+
+        letter-spacing: 0.2em;
+        text-transform: uppercase;
+    }
+
+    .zadig_discographie_description {
+        font-family: Karla;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 126.9%;
+    }
+
+    .zadig_discographie_link {
+      justify-content: space-between;   
+    }
+}
+
+.zadig_discographie_videos {
+    background-color: #ece2cb;
+    padding: 73px 131px;
+
+    .zadig_discographie_videos_title {
+        text-align: right;
+
+        h2 {
+            width: 490px;
+            display: inline-block;
+            font-family: Cormorant Infant;
+            font-weight: Bold;
+            @include fluid-type(14px, 65px);
+            height: 2em;
+            letter-spacing: 0.02em;
+            border-bottom: 2px solid black;
+        }
+    }
+
+    h3 {
+        font-family: Cormorant Infant;
+        font-style: italic;
+        font-weight: 300;
+        @include fluid-type(14px, 50px);
+        line-height: 1.26em;
+        padding-bottom: 1em;
+    }
+
+    .wp-block-gallery {
+        display: block;
+    }
+
+    .blocks-gallery-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        .blocks-gallery-item {
+            width: 100%;
+            padding-bottom: 111px;
+
+            &:nth-child(2n) {
+                padding-left: 66px;
+            }
+            &:nth-child(2n + 1) {
+                padding-right: 66px;
+            }
+        }
+    }
+}

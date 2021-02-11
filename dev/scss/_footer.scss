@@ -1,0 +1,41 @@
+footer {
+    display: grid;
+    grid-template-columns: 1fr 2fr 3fr;
+    background-color: #1f1e1e;
+    color: #fff;
+
+    > div {
+        display: flex;
+        flex-direction: column;
+        @include fluid-type(30px, 51px);
+        padding: 2em 1em;
+    }
+
+    h2 {
+        font-family: "Cormorant Infant", sans-serif;;
+        @include fluid-type(30px, 51px);
+      line-height: 1em;
+        margin: 0;
+    }
+
+    h3{
+        font-family: Roboto;
+        @include fluid-type(14px, 14px);
+        line-height: 2em;
+        font-weight: 300;
+        text-transform: uppercase;
+    }
+
+    .footer-separator {
+        @include fluid-type(30px, 88px);
+        border: 1px solid #ffffff;
+        width: 1em;
+        margin: 0.4em 0;
+    }
+
+    .footer-contact {
+        @include fluid-type(14px, 14px);
+        font-family: 'Karla', sans-serif;
+        color: #fff;
+    }
+}

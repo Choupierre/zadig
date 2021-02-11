@@ -1,0 +1,96 @@
+.post-12 {
+    background-color: #fcfaf4;
+
+    .zadig_biographie_title {
+        @extend .zadig_title_left;
+        width: 588px;
+        margin-left: 122px;
+    }
+
+    .zadig_biographie_description {
+        padding-left: 122px;
+        padding-bottom: 87px;
+        margin: 0;
+
+        p {
+            margin: 3em 0 7em;
+            width: 588px;
+            text-align: justify;
+        }
+
+        .wp-block-column {
+            margin: 0;
+        }
+
+        .wp-block-column:not(:first-child) {
+            text-align: right;
+        }
+
+        .wp-block-image {
+            img {
+                max-width: 588px;
+                height: auto;
+            }
+        }
+    }
+
+    .wp-block-buttons {
+        text-align: center;
+        padding-bottom: 88px;
+    }
+
+    .zadig_biographie_photo {
+        background-color: #1f1e1e;
+        padding: 122px;
+        margin: 0;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 80px;
+
+        h2 {
+            margin-top: 40px;
+            font-family: Cormorant Infant;
+            font-style: italic;
+            font-weight: 300;
+            font-size: 40px;
+            color: white;
+        }
+
+        .wp-block-image {
+            img {
+                height: auto;
+            }
+        }
+    }
+
+    .zadig_biographie_video {
+        padding: 80px 122px;
+        margin: 0;       
+
+        h2 {
+            margin-bottom: 80px;
+            font-family: Cormorant Infant;
+            font-style: italic;
+            font-weight: 300;
+            font-size: 50px;
+           
+        }
+        
+        .wp-block-embed__wrapper {
+            overflow: hidden;
+            position: relative;
+            max-width: 100%;
+            height: 0;
+            padding-bottom: 56.25%;
+        }
+        
+        .wp-block-embed-youtube iframe{   
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+        
+    }
+}

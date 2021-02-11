@@ -1,3 +1,47 @@
+$grid-gutter-width: 0px !default;
+$grid-breakpoints: (
+    xs: 0,
+    md: 768px,
+    xl: 1440px,
+);
+
+$container-max-widths: (
+    md: 768px,
+    xl: 1440px,
+);
+
 @import "node_modules/bootstrap/scss/functions.scss";
 @import "node_modules/bootstrap/scss/variables";
 @import "node_modules/bootstrap/scss/bootstrap";
+
+@import "./mixins";
+@import "./buttons";
+@import "./titles";
+
+.zadig_menu {
+    @import "./menu";
+}
+
+.zadig_medias {
+    @import "./medias";
+}
+
+@import "./biographie";
+@import "./repertoire";
+@import "./contact";
+@import "./patreon";
+
+@import "./footer";
+
+p{
+    font-family: Karla;
+font-style: normal;
+font-weight: normal;
+@include fluid-type(14px, 14px);
+line-height: 1.25em;
+}
+
+.wp-block-column,.wp-block-column:not(:first-child){
+   margin: 0;
+}
+
